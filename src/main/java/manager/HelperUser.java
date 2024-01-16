@@ -34,6 +34,7 @@ public class HelperUser extends HelperBase{
 //        passwordInput.clear();
 //        passwordInput.sendKeys(password);
         type(By.xpath("//input[last()]"),password);
+        //type(By.xpath("//input[l]"),password); //testing line for failtests
     }
 
     public void fillLoginRegistrationForm(User user){
@@ -48,6 +49,7 @@ public class HelperUser extends HelperBase{
 //        passwordInput.click();
 //        passwordInput.clear();
 //        passwordInput.sendKeys(password);
+
         type(By.xpath("//input[last()]"),user.getPassword());
     }
 

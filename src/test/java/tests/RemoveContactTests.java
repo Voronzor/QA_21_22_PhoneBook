@@ -20,14 +20,17 @@ public class RemoveContactTests extends TestBase{
 
     @Test
     public void removeOneContact(){
+        logger.info("Start test with name `removeOneContact`");
         Assert.assertEquals(app.getHelperContact().removeOneContact(),1);
         //Assert size list less by 1
 
     }
     @Test
     public void removeAllContacts(){
+        logger.info("Start test with name `removeAllContacts`");
         app.getHelperContact().removeAllContact();
         Assert.assertEquals(app.getHelperContact().getMessage(), "No Contacts here!");
+        logger.info("Assert check with text `No Contacts here!`");
         //"No contacts here"
     }
 }

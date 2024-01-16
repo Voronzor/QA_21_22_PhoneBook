@@ -1,3 +1,0 @@
-20:26:12.541 INFO  manager.ApplicationManager - All tests run in Chrome Browser
-20:26:13.071 INFO  manager.ApplicationManager - The link --->https://telranedu.web.app/home
-20:26:13.103 INFO  tests.TestBase - Name of method ---> addContactSuccessAllFields

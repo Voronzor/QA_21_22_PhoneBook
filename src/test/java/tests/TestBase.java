@@ -1,8 +1,10 @@
 package tests;
 
+import lombok.Builder;
 import manager.ApplicationManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -18,6 +20,9 @@ public class TestBase {
     public void startLogger(Method m){
         logger.info("Name of method ---> " + m.getName());
     }
+    public void startLogger1(Method m){
+        logger.info("Test data ---> email: 'vorronkovkirill@gmail.com' & password: 'Leet1337!' ");
+    }
     @BeforeSuite
     public void setUp() {
        app.init();
@@ -29,5 +34,9 @@ public class TestBase {
         //app.stop();
     }
 
+    @AfterMethod
+    public void end(){
+        logger.info("===================================");
+    }
 
 }
