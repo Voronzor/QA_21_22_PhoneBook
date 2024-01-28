@@ -2,6 +2,7 @@ package tests;
 
 import Models.Contact;
 import Models.User;
+import manager.DataProviderContact;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -17,19 +18,11 @@ public class AddNewContactTests extends TestBase{
         }
     }
 
-    @Test
-    public void addContactSuccessAllFields(){
+    @Test(dataProvider = "contactSuccess", dataProviderClass = DataProviderContact.class)
+    public void addContactSuccessAllFields(Contact contact){
         logger.info("Start test with the name `addContactSuccessAllFields`");
         logger.info("Login test data ---> email: 'vorronkovkirill@gmail.com' & password: 'Leet1337!' ");
-        int i = (int)(System.currentTimeMillis()/100000 % 3600);
-        Contact contact = Contact.builder()
-                .name("Tony"+i)
-                .lastName("Stark")
-                .address("NY")
-                .phone("356676"+i)
-                .email("stark"+i+"@gmail.com")
-                .description("All fields")
-                .build();
+        int i = (int)(System.currentTimeMillis()/1000 % 3600);
         logger.info("Test start with test data --->" + contact.toString());
         app.getHelperContact().openContactForm();
         app.getHelperContact().fillContactForm(contact);
@@ -40,13 +33,13 @@ public class AddNewContactTests extends TestBase{
 
     }
 
-    @Test
+    @Test(invocationCount = 10)
     public void addContactSuccessRequiredFields(){
         logger.info("Start test with the name `addContactSuccessRequiredFields`");
         logger.info("Login test data ---> email: 'vorronkovkirill@gmail.com' & password: 'Leet1337!' ");
-        int i = (int)(System.currentTimeMillis()/100000 % 3600);
+        int i = (int)(System.currentTimeMillis()/1000 % 3600);
         Contact contact = Contact.builder()
-                .name("Tony"+i)
+                .name("TonyReq"+i)
                 .lastName("Stark")
                 .address("NY")
                 .phone("356678" + i)
@@ -114,17 +107,16 @@ public class AddNewContactTests extends TestBase{
         Assert.assertTrue(app.getHelperContact().isAddPageStillDisplayed());
     }
 
-    @Test
-    public void addNewContactWrongPhone(){
-        logger.info("Start test with the name `addNewContactWrongPhone`");
-        Contact contact = Contact.builder()
-                .name("Tony")
-                .lastName("Stark")
-                .address("yeah")
-                .phone("")
-                .email("stark@gmail.com")
-                .description("Wrong phone")
-                .build();
+    @Test(dataProvider = "contactWrongPhone", dataProviderClass = DataProviderContact.class)
+    public void addNewContactWrongPhone(Contact contact){
+//        Contact contact = Contact.builder()
+//                .name("Tony")
+//                .lastName("Stark")
+//                .address("yeah")
+//                .phone("")
+//                .email("stark@gmail.com")
+//                .description("Wrong phone")
+//                .build();
         logger.info("Test start with test data --->" + contact.toString());
         app.getHelperContact().openContactForm();
         app.getHelperContact().fillContactForm(contact);

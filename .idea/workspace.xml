@@ -5,29 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c959bd7-3826-46ce-a7d7-e0941c3b360e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/manager/ListenerWD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/manager/DataProviderContact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/manager/DataProviderUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log-2024.01.14T17.58.50.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log-2024.01.14T20.26.10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log-2024.01.14T20.26.26.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log-2024.01.14T20.39.07.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log-2024.01.14T20.54.57.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log-2024.01.14T20.55.24.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log-2024.01.14T20.57.28.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/AddNewContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AddNewContactTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RemoveContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RemoveContactTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshots/screen-2921.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshots/screen-2929.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshots/screen-2959.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshots/screen-2960.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshots/screen-2965.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/screenshots/screen.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +51,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="GradleRunConfiguration" name="AddNewContactTests.addContactSuccessAllFields" />
-    </enabled-run-configurations>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -93,8 +75,14 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.LoginTests.loginSuccessModel">
-    <configuration name="AddNewContactTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Voronzor\Desktop\Projects GitHub\QA_21_22_PhoneBook\src\test\resources" />
+      <recent name="C:\Users\Voronzor\Desktop\Projects GitHub\QA_21_22_PhoneBook" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.AddNewContactTests.addContactSuccessRequiredFields">
+    <configuration name="AddNewContactTests.addContactSuccessAllFields" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -107,7 +95,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.AddNewContactTests&quot;" />
+            <option value="&quot;tests.AddNewContactTests.addContactSuccessAllFields&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -142,7 +130,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AddNewContactTests.addNewContactWrongPhone" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -155,31 +143,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.LoginTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="LoginTests.loginSuccess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.LoginTests.loginSuccess&quot;" />
+            <option value="&quot;tests.AddNewContactTests.addNewContactWrongPhone&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -214,13 +178,37 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="LoginTests.loginSuccessModelDP" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.LoginTests.loginSuccessModelDP&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LoginTests.loginSuccessModel" />
-        <item itemvalue="Gradle.LoginTests" />
-        <item itemvalue="Gradle.AddNewContactTests" />
-        <item itemvalue="Gradle.LoginTests.loginSuccess" />
         <item itemvalue="Gradle.AddNewContactTests.addContactSuccessRequiredFields" />
+        <item itemvalue="Gradle.LoginTests.loginSuccessModelDP" />
+        <item itemvalue="Gradle.AddNewContactTests.addNewContactWrongPhone" />
+        <item itemvalue="Gradle.AddNewContactTests.addContactSuccessAllFields" />
+        <item itemvalue="Gradle.LoginTests.loginSuccessModel" />
       </list>
     </recent_temporary>
   </component>
@@ -234,6 +222,9 @@
       <updated>1702232351758</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
