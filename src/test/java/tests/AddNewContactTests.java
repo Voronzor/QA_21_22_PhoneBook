@@ -71,7 +71,7 @@ public class AddNewContactTests extends TestBase{
         app.getHelperContact().saveContact();
         Assert.assertTrue(app.getHelperContact().isAddPageStillDisplayed());
     }
-
+//yeaaahh
     @Test
     public void addNewContactWrongAddress(){
         logger.info("Start test with the name `addNewContactWrongAddress`");
