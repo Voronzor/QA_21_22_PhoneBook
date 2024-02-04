@@ -14,7 +14,7 @@ import java.util.List;
 public class LoginTests extends TestBase{
 
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition(){
         //if SingOut present --->logout
         if(app.getHelperUser().isLogged()){
@@ -72,7 +72,7 @@ public class LoginTests extends TestBase{
 
     }
 
-    @Test
+    @Test(groups = {"smoke"})
     public void loginWrongEmail(){
         logger.info("Start test with name `loginWrongEmail`");
         logger.info("Test data ---> email: 'vorronkovkirillgmail.com' & password: 'Leet1337!' ");

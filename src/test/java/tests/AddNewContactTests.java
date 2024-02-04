@@ -4,6 +4,7 @@ import Models.Contact;
 import Models.User;
 import manager.DataProviderContact;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -11,7 +12,7 @@ import static org.openqa.selenium.By.name;
 
 public class AddNewContactTests extends TestBase{
 
-    @BeforeMethod
+    @BeforeClass(alwaysRun = true)
     public void preCondition(){
         if(!app.getHelperUser().isLogged()){
             app.getHelperUser().login(new User().withEmail("vorronkovkirill@gmail.com").withPassword("Leet1337!"));
@@ -33,11 +34,11 @@ public class AddNewContactTests extends TestBase{
 
     }
 
-    @Test(invocationCount = 10)
+    @Test(groups = {"smoke"})
     public void addContactSuccessRequiredFields(){
         logger.info("Start test with the name `addContactSuccessRequiredFields`");
         logger.info("Login test data ---> email: 'vorronkovkirill@gmail.com' & password: 'Leet1337!' ");
-        int i = (int)(System.currentTimeMillis()/1000 % 3600);
+        int i = (int)(System.currentTimeMillis()/10 % 3600);
         Contact contact = Contact.builder()
                 .name("TonyReq"+i)
                 .lastName("Stark")
